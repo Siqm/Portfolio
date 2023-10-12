@@ -1,0 +1,70 @@
+.header {
+    padding: 1.2rem 0;
+    box-shadow: none;
+    z-index: auto;
+
+    display: flex;
+    align-items: stretch;
+
+    .container {
+        min-height: 3.25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        justify-content: space-between;
+        display: flex;
+        align-items: row;
+        width: 10rem;
+    }
+
+    img {
+        height: 4rem;
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.welcome {
+    padding-top: 2rem;
+    line-height: 1rem;
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .devices {
+        margin-top: 50px;
+        width: 860px;
+        height: 350px;
+        margin-bottom: -0.45rem;
+    }
+}
+
+.welcomeBody {
+    padding: 3rem;
+
+    img {
+        height: 250px;
+    }
+}
+
+.welcomeFooter {
+
+}
+
+.mediumSection {
+    padding: 144px 72px 288px;
+    background-color: #EA738D;
+}
+
+.skillsSection {
+    margin-top: -14rem;
+    
+}
