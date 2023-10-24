@@ -42,19 +42,35 @@ export default function Home() {
 
 
 
-      <section className={styles.welcome}>
+      {/* <section className={styles.welcome}>
 
         <div className={`${styles.container} ${styles.welcomeBody}`}>
           <h1>Fullstack developer & DevOps</h1>
           <h2>I develop inovative solutions to integrate teams and write clean code</h2>
-          <img src={rafaPng} alt="Foto ilustrativa" />
-
+          
         </div>
 
         <div className={styles.welcomeFooter}>
           <img className={styles.devices} src={devices}/>
 
         </div>
+      </section> */}
+
+      <section className={styles.welcome}>
+        <div className={`${styles.container} ${styles.welcomeBody}`}>
+          <div className={styles.welcomeText}>
+            <h1>Software Engineer & Fullstack Developer</h1>
+            <p>I have experience in web development and REST standards and recently, I developed a project using Typescript and NodeJs for the backend, where I consumed an API for importing data, processing and synchronizing it with the data already registered. I also used the NextJs framework with Typescript to build the interface and website. This project is responsible for controlling equipment loans to customers and relating customers (parents and their children).</p>
+          </div>
+
+          <img src={rafaPng} alt="Foto ilustrativa" />
+
+          <div>
+            <h3>Curiosities about me</h3>
+            <p>AQUI VAI FICAR TROCANDO</p>
+          </div>
+        </div>
+
       </section>
 
       <section className={styles.mediumSection}>
@@ -96,7 +112,7 @@ export default function Home() {
       <section>
         <div className={styles.container}>
           <h3>Latest projects I've worked on</h3>
-          
+
         </div>
       </section>
 
