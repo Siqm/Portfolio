@@ -1,6 +1,6 @@
 import { createContext } from 'react';
-import './App.css';
 import Home from './pages/home';
+import './styles.css'
 
 export const MainContext = createContext()
 export default function App() {

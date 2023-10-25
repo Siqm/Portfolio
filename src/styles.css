@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+@font-face {
+  font-family: Mazius;
+  src: url('./assets/fonts/Mazius-Display-Regular.otf');
+}
+@font-face {
+  font-family: Mazius-italic;
+  src: url('./assets//fonts/Mazius-Display-Italic.otf');
+}
+@font-face {
+  font-family: Neutral;
+  src: url('./assets/fonts/NeutralFace.otf');
+}
+@font-face {
+  font-family: Neutral-bold;
+  src: url('./assets/fonts/NeutralFace-Bold.otf')
+}
+@font-face {
+  font-family: Avenir;
+  src: url('./assets/fonts/AvenirLTPro.otf');
+}
+@font-face {
+  font-family: Avenir-light;
+  src: url('./assets/fonts/AvenirLTProLight.otf');
+}
+
+body {
+  margin: 0;
+  font-family: 'Khula';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.25rem;
+  background: #0E1010;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
