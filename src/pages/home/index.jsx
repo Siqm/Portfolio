@@ -1,141 +1,83 @@
-import React, { useEffect, useState } from 'react';
-import siqLogo from '../../assets/siqe-logo.svg'
+import React from 'react';
 import styles from './styles.module.scss'
-import blackInstaIcon from '../../assets/instagram-black.svg'
-import rafaPng from '../../assets/avatar-rafa.png'
-import devices from '../../assets/welcome-devices.svg'
-import iconFrontend from '../../assets/front-end-1.svg'
-import iconBackend from '../../assets/database-1.svg'
+import linkedin from '../../assets/icons/linkedin.svg'
+import github from '../../assets/icons/github.svg'
+import {projects} from '../../assets/static/projects'
+import Projects from '../../components/projects';
 
 export default function Home() {
 
-  // eslint-disable-next-line
-  const [whiteMode, setWhiteMode] = useState({})
-
-  useEffect(() => {
-
-    setWhiteMode({
-      icons: {
-        instagram: blackInstaIcon,
-      }
-    })
-  }, [])
-
   return (
+    <div className={styles.app}>
+      <div className={styles.header}>
+        <p className={styles.name}>Rafael Mello</p>
+        <nav className={styles.navigation}>
+          <a href="#">About</a>
+          <a href="#">Projects</a>
+          <a href="#" className={styles.buttonHeader}>Get in touch</a>
+        </nav>
+      </div>
 
+      <div className={styles.hero}>
 
-
-    <>
-      <header className={styles.header}>
-
-        <div className={styles.container}>
-
-          <img className={styles.logo} src={siqLogo} alt="" />
-
-          <nav>
-            <button>claro/escuro</button>
-
-            <button>Contato</button>
-          </nav>
-        </div>
-      </header>
-
-
-
-      {/* <section className={styles.welcome}>
-
-        <div className={`${styles.container} ${styles.welcomeBody}`}>
-          <h1>Fullstack developer & DevOps</h1>
-          <h2>I develop inovative solutions to integrate teams and write clean code</h2>
-          
+        <div className={styles.heroText}>
+          <h1>Olá!</h1>
+          <p>Sou o Rafael, Engenheiro de software e Desenvolvedor fullstack, eu crio códigos e soluções escaláveis e amo fazer isso</p>
+          <p>Bem-vindo ao meu portfólio! 😁</p>
         </div>
 
-        <div className={styles.welcomeFooter}>
-          <img className={styles.devices} src={devices}/>
-
-        </div>
-      </section> */}
-
-      <section className={styles.welcome}>
-        <div className={`${styles.container} ${styles.welcomeBody}`}>
-          <div className={styles.welcomeText}>
-            <h1>Software Engineer & Fullstack Developer</h1>
-            <p>I have experience in web development and REST standards and recently, I developed a project using Typescript and NodeJs for the backend, where I consumed an API for importing data, processing and synchronizing it with the data already registered. I also used the NextJs framework with Typescript to build the interface and website. This project is responsible for controlling equipment loans to customers and relating customers (parents and their children).</p>
+        <div className={`${styles.heroFooter} ${styles.flex}`}>
+          <div className={styles.flex}>
+            <a target='blank' href="https://www.linkedin.com/in/rafael-mello-desenvolvedor/">
+              <img src={linkedin} alt="Icone do linkedin" />
+            </a>
+            <a target='blank' href="https://github.com/Siqm">
+              <img src={github} alt="Icone do github" />
+            </a>
           </div>
 
-          <img src={rafaPng} alt="Foto ilustrativa" />
-
-          <div>
-            <h3>Curiosities about me</h3>
-            <p>AQUI VAI FICAR TROCANDO</p>
+          <div className={styles.flex}>
+            <a href="#" className={`${styles.button} ${styles.buttonInverted}`}>View projects</a>
+            <a href="#" className={styles.button}>Get in touch</a>
           </div>
         </div>
 
-      </section>
 
-      <section className={styles.mediumSection}>
-        <div className={styles.container}>
-          <h2>Hi, I'm Rafael. Welcome to my Portfolio</h2>
-          <p>Lorem ipsum</p>
+      </div>
+
+      <div className={`${styles.flex} ${styles.about}`}>
+        <h2>About me</h2>
+        <div>
+          <p>Hello! My name is Amanda and I enjoy creating things.</p>
+          <p>Ab galisum magni non aperiam iusto et pariatur aliquam aut velit nobis et autem error. Qui veniam minima est dicta nisi sit earum numquam aut repellat unde. Non nisi adipisci est distinctio voluptatem qui beatae quis ad enim facere cum quaerat officia aut suscipit possimus?</p>
+          <p>Qui vero dolorem qui veniam illum eos omnis molestiae 33 deleniti omnis! Aut illum accusantium qui nemo praesentium vel quidem illum aut necessitatibus sint et rerum fuga est modi libero. Qui dicta itaque.</p>
         </div>
-      </section>
+      </div>
 
-      <section className={styles.skillsSection}>
-        <div className={styles.container}>
-          <div className={styles.box}>
+      <div className={`${styles.interests} ${styles.topicIntro}`}>
+        <h2>Interests</h2>
+        <p>Some things I enjoy learing about and doing</p>
 
-            <div className={styles.column}>
-              <img src={iconBackend} alt="" />
-              <h3>Back-end</h3>
-              <p>I value simple content structure, clean design patterns, and thoughtful interactions</p>
-              <p>Languages and tools</p>
-              <p>Node.js, Lua, MySQL, MongoDB</p>
-            </div>
+        <div className={styles.cards}>
 
-            <div className={styles.column}>
-              <img src={iconFrontend} alt="" />
-              <h3>Front-end</h3>
-              <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-              <p>Languages and tools</p>
-              <p>React, React-Native, Sass, Javascript, Typescript</p>
-            </div>
-
-            <div className={styles.column}>
-              <h3>Outras Habilidades</h3>
-              <p>To increse productive and team integration I also work with</p>
-              <p>Github, Git, Postman</p>
-            </div>
-          </div>
+          <p>Back-end</p>
+          <p>DevOps</p>
+          <p>Front-end</p>
+          <p>Cyber-Security</p>
+          <p>Workout</p>
+          <p>Movies</p>
         </div>
-      </section>
+      </div>
 
-      <section>
-        <div className={styles.container}>
-          <h3>Latest projects I've worked on</h3>
+      <div className={`${styles.projects} ${styles.topicIntro}`}>
+        <h2>Projects</h2>
+        <p>Some things I've worked recent</p>
 
+        <div className={styles.projects}>
+
+          <Projects projects={projects}/>
         </div>
-      </section>
-
-      <section>
-        <div className={styles.container}>
-          <h3>Contact me</h3>
-          <form>
-            <label>Name</label>
-            <input type="text" />
-
-            <label>Email</label>
-            <input type="email" />
-
-            <label>Message</label>
-            <input type="text" />
-          </form>
-        </div>
-      </section>
-
-      <footer>
-        <p>Developed by Siq Enterprise</p>
-      </footer>
-
-    </>
+      </div>
+    </div>
   )
 }
