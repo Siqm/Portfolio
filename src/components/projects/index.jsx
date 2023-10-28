@@ -16,13 +16,24 @@ export default function Projects({ projects }) {
     ...fonts.Avenir(20)
   }
 
+  const cardContainer = {
+    ...styles.dimesion(1110, 335),
+    ...styles.displayFlex(),
+    backgroundColor: 'red',
+
+  }
+
+  const projectDescription = {
+    ...styles.displayFlex('','','column'),
+  }
+
   return (
     <>
       {projects.map((project, index) => {
         index += 1
         if (index % 2 === 0) {
           return (
-            <div key={index}>
+            <div style={styles.dimesion(1110, 335)} key={index}>
               <p style={projectType}>{project.type}</p>
               <h2 style={title}>{project.title}</h2>
               <p style={description}>{project.description}</p>
@@ -33,22 +44,25 @@ export default function Projects({ projects }) {
                 })}
                 <a href={project.link}>Check over</a>
               </div>
-              <img src={project.img} alt={project.imgAlt} />
+              <img style={styles.dimesion(635, 332)} src={project.img} alt={project.imgAlt} />
             </div>
           )
         } else {
           return (
-            <div key={index}>
-              <img src={project.img} alt={project.imgAlt} />
-              <p style={projectType}>{project.type}</p>
-              <h2 style={title}>{project.title}</h2>
-              <p style={description}>{project.description}</p>
-              <div>
-                {project.technologies.map((icon, i) => {
-                  return (<img key={i} src={icon.img} alt={icon.alt} />)
-                })
-                }
-                <a href={project.link}>Check over</a>
+            <div style={cardContainer} key={index}>
+              <img style={styles.dimesion(635, 332)} src={project.img} alt={project.imgAlt} />
+
+              <div style={projectDescription}>
+                <p style={projectType}>{project.type}</p>
+                <h2 style={title}>{project.title}</h2>
+                <p style={description}>{project.description}</p>
+                <div style={styles.displayFlex('center', 'center', 'row')}>
+                  {project.technologies.map((icon, i) => {
+                    return (<img key={i} src={icon.img} alt={icon.alt} />)
+                  })
+                  }
+                  <a href={project.link}>Check over</a>
+                </div>
               </div>
             </div>
           )

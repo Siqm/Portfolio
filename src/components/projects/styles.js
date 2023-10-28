@@ -32,5 +32,15 @@ export const fonts = {
 }
 
 export const styles = {
-    
+    dimesion: (width, height) => ({
+        width: width,
+        height: height,
+    }),
+
+    displayFlex: (justify, align, direction) => ({
+        display: 'flex',
+        justifyContent: justify,
+        alignItems: align,
+        flexDirection: direction
+    })
 }
