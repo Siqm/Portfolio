@@ -1,24 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
 @font-face {
   font-family: Mazius;
   src: url('./assets/fonts/Mazius-Display-Regular.otf');
 }
+
 @font-face {
   font-family: Mazius-italic;
   src: url('./assets//fonts/Mazius-Display-Italic.otf');
 }
+
 @font-face {
   font-family: Neutral;
   src: url('./assets/fonts/NeutralFace.otf');
 }
+
 @font-face {
   font-family: Neutral-bold;
   src: url('./assets/fonts/NeutralFace-Bold.otf')
 }
+
 @font-face {
   font-family: Avenir;
   src: url('./assets/fonts/AvenirLTPro.otf');
 }
+
 @font-face {
   font-family: Avenir-light;
   src: url('./assets/fonts/AvenirLTProLight.otf');
@@ -59,4 +65,21 @@ p {
 
 a {
   text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: Neutral;
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+button:hover {
+  cursor: pointer;
 }
