@@ -133,7 +133,7 @@
 
 .interests {
     width: 77vw;
-    margin: 0 auto;
+    margin: 0 auto 280px;
     color: #fff;
     display: flex;
     align-items: center;
@@ -179,4 +179,76 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
+    margin-bottom: 180px;
+}
+
+.maziusItalic {
+    color: #FFF;
+    text-align: center;
+    font-family: Mazius-italic;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.avenirNormal {
+    color: #FFF;
+    text-align: center;
+    font-family: Avenir-light;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 240px auto;
+    width: 70vw;
+    
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 35vw;
+    }
+
+    input {
+        width: 16vw;
+        padding: 7px;
+        border-radius: 41px;
+        border: none;
+        outline: none;
+        margin-bottom: 15px;
+    }
+
+    textarea {
+        width: 35vw;
+        outline: none;
+        border-radius: 41px;
+        padding: 7px;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 35vw;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 165px;
+    border-top: 1px solid #272D2B;
+
+    .navigation {
+        margin: 36px 0;
+    }
 }

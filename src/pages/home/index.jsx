@@ -2,19 +2,23 @@ import React from 'react';
 import styles from './styles.module.scss'
 import linkedin from '../../assets/icons/linkedin.svg'
 import github from '../../assets/icons/github.svg'
-import {projects} from '../../assets/static/projects'
+import { projects } from '../../assets/static/projects'
 import Projects from '../../components/projects';
 
 export default function Home() {
+
+  function smoothScroll(sectionId) {
+    document.querySelector(sectionId).scrollIntoView({behavior: 'smooth'})
+  }
 
   return (
     <div className={styles.app}>
       <div className={styles.header}>
         <p className={styles.name}>Rafael Mello</p>
         <nav className={styles.navigation}>
-          <a href="#">About</a>
-          <a href="#">Projects</a>
-          <a href="#" className={styles.buttonHeader}>Get in touch</a>
+          <button onClick={() => smoothScroll('#about')}>About</button>
+          <button onClick={() => smoothScroll('#projects')}>Projects</button>
+          <button onClick={() => smoothScroll('#sendEmail')} className={styles.buttonHeader}>Get in touch</button>
         </nav>
       </div>
 
@@ -37,15 +41,18 @@ export default function Home() {
           </div>
 
           <div className={styles.flex}>
-            <a href="#" className={`${styles.button} ${styles.buttonInverted}`}>View projects</a>
-            <a href="#" className={styles.button}>Get in touch</a>
+            <button 
+              onClick={() => smoothScroll('#projects')} 
+              className={`${styles.button} ${styles.buttonInverted}`}
+            >View projects</button>
+            <button onClick={() => smoothScroll('#sendEmail')} className={styles.button}>Get in touch</button>
           </div>
         </div>
 
 
       </div>
 
-      <div className={`${styles.flex} ${styles.about}`}>
+      <div id='about' className={`${styles.flex} ${styles.about}`}>
         <h2>About me</h2>
         <div>
           <p>Hello! My name is Amanda and I enjoy creating things.</p>
@@ -69,15 +76,40 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={`${styles.projects} ${styles.topicIntro}`}>
+      <div id='projects' className={`${styles.projects} ${styles.topicIntro}`}>
         <h2>Projects</h2>
         <p>Some things I've worked recent</p>
 
         <div className={styles.projects}>
 
-          <Projects projects={projects}/>
+          <Projects projects={projects} />
         </div>
       </div>
+
+      <div className={styles.contact} id='sendEmail'>
+        <h2 className={styles.maziusItalic}>get in touch</h2>
+        <form action="https://formsubmit.co/rafaelsmello01@gmail.com" method="POST">
+          <input type="text" name="name" placeholder='Full name'required />
+          <input type="email" name="email" placeholder='Email Address' required />
+          <textarea name="message" placeholder='Write your message here'></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <div className={styles.socialIcons}>
+
+        </div>
+      </div>
+
+      <footer className={styles.footer}>
+        <nav className={styles.navigation}>
+          <button onClick={() => smoothScroll('#about')}>About</button>
+          <button onClick={() => smoothScroll('#projects')}>Projects</button>
+          <button 
+            onClick={() => smoothScroll('#sendEmail')} href="#" 
+            className={styles.buttonHeader}
+          >Contact</button>
+        </nav>
+        <p className={styles.avenirNormal}>© 2022 Amanda Yang All Rights Reserved</p>
+      </footer>
     </div>
   )
 }

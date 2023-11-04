@@ -42,5 +42,10 @@ export const styles = {
         justifyContent: justify,
         alignItems: align,
         flexDirection: direction
+    }),
+
+    icon: (maxWidth, maxHeigt) => ({
+        maxWidth: maxWidth,
+        maxHeigt: maxHeigt,
     })
 }
