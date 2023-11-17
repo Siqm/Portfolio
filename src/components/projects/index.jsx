@@ -31,6 +31,11 @@ export default function Projects({ projects }) {
     ...styles.dimesion('33vw'),
   }
 
+  const technologies = {
+    ...styles.dimesion('', '30px'),
+    ...styles.displayFlex('', 'center')
+  }
+
   return (
     <>
       {projects.map((project, index) => {
@@ -45,7 +50,7 @@ export default function Projects({ projects }) {
                 <h2 style={title}>{project.title}</h2>
                 <p style={description}>{project.description}</p>
                 <div style={styles.displayFlex('space-between', 'center', 'row')}>
-                  <div style={styles.dimesion('', '30px')}>
+                  <div style={technologies}>
                     {project.technologies.map((icon, i) => {
                       return (
                         <img style={styles.icon('30px')} key={i} src={icon.img} alt={icon.alt} />

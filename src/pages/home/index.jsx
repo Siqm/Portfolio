@@ -104,7 +104,7 @@ export default function Home() {
         <form action="https://formsubmit.co/rafaelsmello01@gmail.com" method="POST">
           <input type="text" name="name" placeholder={t("getInTouch.placeholder.name")} required />
           <input type="email" name="email" placeholder={t("getInTouch.placeholder.email")} required />
-          <textarea name="message" placeholder={t("getInTouch.placeholder.message")}></textarea>
+          <textarea  name="message" placeholder={t("getInTouch.placeholder.message")}></textarea>
           <button type="submit">{t("getInTouch.button")}</button>
         </form>
         <div className={styles.socialIcons}>

@@ -231,9 +231,11 @@
     textarea {
         width: 35vw;
         outline: none;
-        border-radius: 41px;
+        border-radius: 15px;
         padding: 7px;
         margin-bottom: 15px;
+        resize: none;
+        height: 80px;
     }
 
     button {
