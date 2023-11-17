@@ -1,0 +1,98 @@
+{
+    "header": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Get in touch"
+    },
+    "hero": {
+        "h1": "Hello!",
+        "selfDescription": "I'm Rafael, a Software Engineer and Fullstack Developer. I create scalable code and solutions, and I love doing it.",
+        "welcome": "Welcome to my portfolio! 😁",
+        "projects": "Viw projects",
+        "contact": "Get in touch"
+    },
+    "about": {
+        "title": "About me",
+        "text": "I consider myself analytical, committed, and results-oriented. I always prioritize the quality of my deliverables and continually seek new knowledge to enhance my skills. I have experience in web development, scripting, enhancements, and innovations for FiveM, microservices, integrations, and distributed systems architecture. At Trigueiro Network, I have the opportunity to put my knowledge into practice and implement scalable solutions, code standards, and revolutionize systems that previously had various limitations."
+    },
+    "interests": {
+        "title": "Interests",
+        "paragraph": "Some things I enjoy learning about and doing",
+        "cards": [
+            "Back-end",
+            "Devops",
+            "Front-end",
+            "Cyber-security",
+            "Workout",
+            "Movies"
+        ]
+    },
+    "Projects": {
+        "title": "Projects",
+        "paragraph": "Some things I've worked recent",
+        "elements": [
+            {
+                "type": "front-end",
+                "title": "Euro Moeda",
+                "description": "In this project, I was responsible for developing all the front-end parts and deployment. By consuming Web APIs to keep currency values up to date, I created currency converters and charts. I registered a domain and deployed the application.",
+                "technologies": [
+                    "React",
+                    "Sass"
+                ],
+                "link": "https://www.euromoeda.com/",
+                "img": "euroMoedaImg",
+                "imgAlt": "Images of the EuroCurrency website."
+            },
+            {
+                "type": "back-end",
+                "title": "Metaverso FiveM Driving School",
+                "description": "In this immersive driving school, I was responsible for integrating the front-end with the back-end and providing functionality to it. I also created all the steps and functionality for practical exams for all vehicle categories.",
+                "technologies": [
+                    "React",
+                    "Sass"
+                ],
+                "link": "https://youtu.be/WAVdn4VXbPQ?si=795UCYAlo4EIu9rO",
+                "img": "ghostImg",
+                "imgAlt": "This is a ghost loading image."
+            },
+            {
+                "type": "back-end",
+                "title": "Metaverso FiveM ID Exchange",
+                "description": "This was a project I took over that had bugs and unnecessary complexity. I restructured the application's logic, making it much more straightforward and simple, facilitating code maintenance, and optimizing the process of database changes. I also trained the installation team to understand how it should be properly tailored to clients and their needs.",
+                "technologies": [
+                    "React",
+                    "Sass"
+                ],
+                "link": "https://youtu.be/oIkCx0uT9MM?si=PcqVugegm5cXAlmN",
+                "img": "ghostImg",
+                "imgAlt": "This is a ghost loading image."
+            },
+            {
+                "type": "Front-end",
+                "title": "React Boilerplate for CEF",
+                "description": "In this project, I was responsible for creating a scalable solution that was easy for the front-end to use in development and for the back-end to integrate. Since React is not natively compatible with the CEF (Chromium Embedded Framework), something was needed to make the development process more agile for everyone.",
+                "technologies": [
+                    "React",
+                    "Sass"
+                ],
+                "link": "https://www.github.com/Siqm",
+                "img": "ghostImg",
+                "imgAlt": "This is a ghost loading image."
+            }
+        ]
+    },
+    "getInTouch": {
+        "placeholder":{
+            "name":"Full name",
+            "email":"Email Address",
+            "message":"Write your message here"
+        },
+        "button":"Send"
+    },
+    "footer":{
+        "about":"About",
+        "projects":"Projects",
+        "contact":"Contact",
+        "copyright":"© 2022 Rafeal Mello All Rights Reserved"
+    }
+}

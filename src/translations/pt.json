@@ -1,0 +1,99 @@
+{
+    "header": {
+        "about": "Sobre",
+        "projects": "Projetos",
+        "contact": "Entre em contato"
+    },
+    "hero": {
+        "h1": "Olá!",
+        "selfDescription": "Sou o Rafael, Engenheiro de software e Desenvolvedor fullstack, eu crio códigos e soluções escaláveis e amo fazer isso",
+        "welcome": "Bem-vindo ao meu portfólio! 😁",
+        "projects": "Veja meus projetos",
+        "contact": "Entre em contato"
+    },
+    "about": {
+        "title": "Sobre mim",
+        "text": "Considero-me resiliente, flexível, proativo, comprometido e orientado a resultados. Sempre priorizo a qualidade das minhas entregas e busco constantemente por novos conhecimentos para aprimorar minhas habilidades. Tenho experiência em desenvolvimento web, scripts, correções e inovações para FiveM, microsserviços, integrações, arquitetura de sistemas distribuídos.Na Trigueiro Network tenho a oportunidade de colocar em prática meus conhecimentos e implementar soluções escaláveis, padrões de códigos e revolucionar sistemas que anteriormente apresentavam diversas limitações."
+    },
+    "interests": {
+        "title": "Interesses",
+        "paragraph": "Algumas coisas que gosto de aprender e fazer",
+        "cards": [
+            "Back-end",
+            "Devops",
+            "Front-end",
+            "Cyber-security",
+            "Workout",
+            "Movies"
+        ]
+    },
+    "projects": {
+        "title": "Projetos",
+        "paragraph": "Alguns projetos que trabalhei recentemente",
+        "elements": [
+            {
+                "type": "front-end",
+                "title": "Euro Moeda",
+                "description": "Neste projeto, fui responsável por desenvolver todas as partes front-end e deploy. Através do consumo de Web APIs para manter os valores das moedas sempre atualizadas, montei conversores de moedas e gráficos. Registrei um dominio e fiz o deploy da aplicação.",
+                "technologies": [
+                    "React",
+                    "Sass"
+                ],
+                "link": "https://www.euromoeda.com/",
+                "img": "euroMoedaImg",
+                "imgAlt": "Images of the EuroMoeda website."
+            },
+            {
+                "type": "back-end",
+                "title": "Metaverso FiveM Auto escola",
+                "description": "Nessa auto-escola imersiva, eu fui responsável por integrar o front-end com o back-end e dar funcionalidade a ele. Também criei todas as etapas e funcionamento dos \"exames práticos\" para todas as categorias de veícuilos",
+                "technologies": [
+                    "React",
+                    "Sass"
+                ],
+                "link": "https://youtu.be/WAVdn4VXbPQ?si=795UCYAlo4EIu9rO",
+                "img": "Autoescola",
+                "imgAlt": "This is a ghost loading image."
+            },
+            {
+                "type": "back-end",
+                "title": "Metaverso FiveM ID Exchange",
+                "description": "Este foi um projeto que peguei em andamento e que estava com bugs e com uma complexidade que não era necessário. Reestruturei a lógica da aplicação, deixando-a muito mais direta e simples, facilitando a manutenção do código e otimizando o processo de alteração no banco de dados. Também treinei o time de instalação para que entendesse como deveria ser devidamente adequado aos clientes e suas necessidades",
+                "technologies": [
+                    "React",
+                    "Sass"
+                ],
+                "link": "https://youtu.be/oIkCx0uT9MM?si=PcqVugegm5cXAlmN",
+                "img": "ghostImg",
+                "imgAlt": "This is a ghost loading image."
+            },
+            {
+                "type": "Front-end",
+                "title": "React Boilerplate for CEF",
+                "description": "Neste projeto, fui responsável por criar uma solução escalável que fosse fácil para o front-end utilizar no desenvolvimento e para o back-end integrar. Como o React não é nativamente compatível com o CEF (Chromium Embedded Framework), era necessário algo que tornasse o processo de desenvolvimento mais ágil para todos.",
+                "technologies": [
+                    "React",
+                    "Sass"
+                ],
+                "link": "https://www.github.com/Siqm",
+                "img": "ghostImg",
+                "imgAlt": "This is a ghost loading image."
+            }
+        ]
+    },
+    "getInTouch": {
+        "title":"Entre em contato",
+        "placeholder":{
+            "name":"Nome completo",
+            "email":"Endereço de email",
+            "message":"Escreva sua mensagem aqui"
+        },
+        "button":"Enviar"
+    },
+    "footer":{
+        "about":"Sobre",
+        "projects":"Projetos",
+        "contact":"Contato",
+        "copyright":"© 2022 Rafeal Mello All Rights Reserved"
+    }
+}
