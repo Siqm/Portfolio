@@ -2,7 +2,8 @@
     "header": {
         "about": "About",
         "projects": "Projects",
-        "contact": "Get in touch"
+        "contact": "Get in touch",
+        "translate":"Traduzir"
     },
     "hero": {
         "h1": "Hello!",

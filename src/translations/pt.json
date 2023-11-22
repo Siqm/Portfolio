@@ -2,7 +2,8 @@
     "header": {
         "about": "Sobre",
         "projects": "Projetos",
-        "contact": "Entre em contato"
+        "contact": "Entre em contato",
+        "translate":"Translate"
     },
     "hero": {
         "h1": "Olá!",

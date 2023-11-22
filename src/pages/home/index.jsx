@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './styles.module.scss'
 import linkedin from '../../assets/icons/linkedin.svg'
 import github from '../../assets/icons/github.svg'
@@ -8,25 +8,41 @@ import { useTranslation } from 'react-i18next'
 
 export default function Home() {
 
-  const { t } = useTranslation('global')
+  const { t, i18n } = useTranslation('global')
+  const [translation, setTranslation] = useState('pt')
 
   function smoothScroll(sectionId) {
-    document.querySelector(sectionId).scrollIntoView({behavior: 'smooth'})
+    document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' })
+  }
+
+  function changeTranslation() {
+    console.log('translation', translation);
+    if (translation === 'pt') {
+      i18n.changeLanguage('en')
+      setTranslation('en')
+    } else {
+      i18n.changeLanguage('pt')
+      setTranslation('pt')
+    }
   }
 
   return (
     <div className={styles.app}>
       <div className={styles.header}>
+
         <p className={styles.name}>Rafael Mello</p>
         <nav className={styles.navigation}>
-          <button 
+          <button
             onClick={() => smoothScroll('#about')}
           >{t("header.about")}</button>
-          <button 
+          <button
             onClick={() => smoothScroll('#projects')}
           >{t("header.projects")}</button>
-          <button 
-            onClick={() => smoothScroll('#sendEmail')} 
+          <button onClick={() => changeTranslation()}>
+            {t("header.translate")}
+            </button>
+          <button
+            onClick={() => smoothScroll('#sendEmail')}
             className={styles.buttonHeader}
           >{t("header.contact")}</button>
         </nav>
@@ -51,12 +67,12 @@ export default function Home() {
           </div>
 
           <div className={styles.flex}>
-            <button 
-              onClick={() => smoothScroll('#projects')} 
+            <button
+              onClick={() => smoothScroll('#projects')}
               className={`${styles.button} ${styles.buttonInverted}`}
             >{t("hero.projects")}</button>
-            <button 
-              onClick={() => smoothScroll('#sendEmail')} 
+            <button
+              onClick={() => smoothScroll('#sendEmail')}
               className={styles.button}
             >{t("hero.contact")}</button>
           </div>
@@ -104,7 +120,7 @@ export default function Home() {
         <form action="https://formsubmit.co/rafaelsmello01@gmail.com" method="POST">
           <input type="text" name="name" placeholder={t("getInTouch.placeholder.name")} required />
           <input type="email" name="email" placeholder={t("getInTouch.placeholder.email")} required />
-          <textarea  name="message" placeholder={t("getInTouch.placeholder.message")}></textarea>
+          <textarea name="message" placeholder={t("getInTouch.placeholder.message")}></textarea>
           <button type="submit">{t("getInTouch.button")}</button>
         </form>
         <div className={styles.socialIcons}>
@@ -116,8 +132,8 @@ export default function Home() {
         <nav className={styles.navigation}>
           <button onClick={() => smoothScroll('#about')}>{t("footer.about")}</button>
           <button onClick={() => smoothScroll('#projects')}>{t("footer.projects")}</button>
-          <button 
-            onClick={() => smoothScroll('#sendEmail')} href="#" 
+          <button
+            onClick={() => smoothScroll('#sendEmail')} href="#"
             className={styles.buttonHeader}
           >{t("footer.contact")}</button>
         </nav>
